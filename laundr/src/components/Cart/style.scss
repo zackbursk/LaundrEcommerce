@@ -1,0 +1,296 @@
+.float-cart {
+  position: fixed;
+  top: 0;
+  right: -450px;
+  width: 450px;
+  height: 100%;
+  background-color: #F9F9F9;
+  box-sizing: border-box;
+
+  transition: right 0.4s;
+
+  &--open {
+    right: 0;
+  }
+
+  &__close-btn {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #1b1a20;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: #676767;
+    }
+  }
+
+  .bag {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/minimal-set-seven/32/minimal-49-512.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    &--float-cart-closed {
+      position: absolute;
+      //background-color: #676767;
+      //background-size: 60%;
+      left: -230px;
+      top: 25px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+
+      .bag__quantity {
+        color: #676767;
+        bottom: 5px;
+        right: 1px;
+      }
+
+    }
+
+    &__quantity {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      color: #0c0b10;
+      font-weight: bold;
+      font-size: 0.7em;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+      bottom: -5px;
+      right: 0px;
+      font-family: 'Calmer';
+    }
+  }
+
+  &__header {
+    color: black;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 45px 0;
+
+    .header-title {
+      font-weight: bold;
+      font-size: 1.8em;
+      text-align: right;
+      font-family: 'Calmer';
+    }
+    .bag__quantity {
+      color: #676767;
+      top:58px;
+      left: 105px;
+    }
+  }
+
+  &__shelf-container {
+    position: relative;
+    min-height: 280px;
+    padding-bottom: 200px;
+
+    .shelf-empty {
+      color: black;
+      text-align: left;
+      line-height: 40px;
+      padding: 5%;
+    }
+
+    .shelf-item {
+      position: relative;
+      box-sizing: border-box;
+      padding: 5%;
+
+      transition: background-color 0.4s, opacity 0.4s;
+
+      &::before {
+        content: '';
+        width: 90%;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 5%;
+      }
+
+      &--mouseover {
+        background: #0c0b10;
+
+        .shelf-item__details {
+          .title,
+          .desc {
+            text-decoration: line-through;
+            opacity: 0.6;
+          }
+        }
+
+        .shelf-item__price {
+          text-decoration: line-through;
+          opacity: 0.6;
+        }
+      }
+
+      &__del {
+        width: 16px;
+        height: 16px;
+        top: 15px;
+        right: 5%;
+        border-radius: 50%;
+        position: absolute;
+        background-size: auto 100%;
+        background-image: url('https://rawcdn.githack.com/jeffersonRibeiro/react-shopping-cart/ccf64841ddfdfedfce9821b2b7ff2c8075afb17c/src/static/sprite_delete-icon.png');
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover {
+          background-position-x: -17px;
+        }
+      }
+
+      &__thumb,
+      &__details,
+      &__price {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &__thumb {
+        vertical-align: middle;
+        width: 15%;
+        margin-right: 3%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      &__details {
+        width: 57%;
+
+        .title {
+          color: #ececec;
+          margin: 0;
+        }
+
+        .desc {
+          color: #5b5a5e;
+          margin: 0;
+        }
+      }
+      &__price {
+        font-family: 'Roboto', sans-serif;
+        color: #676767;
+        text-align: right;
+        width: 25%;
+      }
+    }
+  }
+
+  &__footer {
+    box-sizing: border-box;
+    padding: 5%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    background-color: #F9F9F9;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 20px;
+      display: block;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+    }
+
+    .sub,
+    .sub-price {
+      color: #000000;
+      font-family: 'Roboto', sans-serif;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .sub {
+      font-family: 'Roboto', sans-serif;
+      width: 20%;
+      font-size: 22px;
+    }
+
+    .sub-price {
+      width: 80%;
+      text-align: right;
+
+      &__val,
+      &__installment {
+        margin: 0;
+      }
+
+      &__val {
+        color: #676767;
+        font-size: 22px;
+      }
+    }
+
+    .buy-btn {
+      color: #ececec;
+      text-transform: uppercase;
+      background-color: #0c0b10;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      cursor: pointer;
+
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+/* MAC scrollbar para desktop*/
+@media screen and (min-width: 640px) {
+  .float-cart__content::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  .float-cart__content::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #0c0b10;
+  }
+}
+
+.float-cart__content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+@font-face {
+  font-family: 'Calmer'; /*a name to be used later*/
+  src: url(../../images/images/Calmer.ttf); /*URL to font*/
+}

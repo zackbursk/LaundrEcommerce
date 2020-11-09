@@ -1,0 +1,107 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr 5rem;
+  height: 100%;
+}
+.header{
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.brand a{
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-links a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.header-links a:hover{
+  color: #ff8000;
+}
+.main{
+  grid-area: main;
+}
+.footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #ff8000;
+}
+
+/* Landing Page */
+.products {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.products li{
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1rem;
+  height: 100vh;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-price{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.product-image{
+  max-width: 100vh;
+  max-height: 100vh;
+}
+.header-1{
+  font-family: 'Calmer';
+  font-size: 2.6rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.header-2{
+  font-size: 2rem;
+  padding: 5px 0;
+  font-family: 'Roboto', sans-serif;
+}
+@font-face {
+  font-family: 'Calmer'; /*a name to be used later*/
+  src: url(./images/images/Calmer.ttf); /*URL to font*/
+}
