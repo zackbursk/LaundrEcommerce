@@ -13,7 +13,7 @@ const home = () => {
                     {
                         data.products.map(product =>
                             <li>
-                                <div className="product">
+                                <div className="product" style={{backgroundColor: product.color}}>
                                     <img className="product-image" src={product.image} alt="productImage"/>
                                     <div className="product-name">
                                         <a href="product.html">{product.name}</a>
