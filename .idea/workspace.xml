@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a154e47d-270b-4fbc-a2ef-b75cd9b9b0fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/laundr/src/components/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laundr/src/components/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/components/Cart/CartProduct/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/components/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/components/Cart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/components/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/components/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/Calmer.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/Calmer.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/bombs/Laundr Bomb Angle1.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/bombs/Laundr Bomb Angle1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/bombs/Laundr Bomb Angle2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/error-404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/freshair_asset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/freshair_pattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/laundr logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/laundr logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/laundrassets.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/mainpage_mockup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/images/images/secondpage_mockup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/laundr/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/services/actionTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/services/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laundr/src/services/reducer.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kcjHuTVCEmiKDPnt8rAveCoFCP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/laundr/src" />
+      <recent name="$PROJECT_DIR$/laundr/public" />
+      <recent name="$PROJECT_DIR$/laundr/public/img" />
+      <recent name="$PROJECT_DIR$/laundr/src/images/images" />
+      <recent name="$PROJECT_DIR$/laundr/src/services/cart" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a154e47d-270b-4fbc-a2ef-b75cd9b9b0fe" name="Default Changelist" comment="" />
+      <created>1606006692404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606006692404</updated>
+      <workItem from="1606006695254" duration="10478000" />
+      <workItem from="1606157735470" duration="37198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606279818763">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="458" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.820@0.23.1440.820" timestamp="1606279818763" />
+    <state x="458" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1440.23.1130.747/0.23.1440.821@0.23.1440.821" timestamp="1606091677196" />
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom" timestamp="1606240807394">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1606240807394" />
+    <state width="1398" height="212" key="GridCell.Tab.0.center" timestamp="1606240807392">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1606240807392" />
+    <state width="1398" height="212" key="GridCell.Tab.0.left" timestamp="1606240807391">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1606240807391" />
+    <state width="1398" height="212" key="GridCell.Tab.0.right" timestamp="1606240807393">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state width="1398" height="212" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1606240807393" />
+    <state x="385" y="196" key="run.anything.popup" timestamp="1606268201736">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="385" y="196" key="run.anything.popup/0.23.1440.820@0.23.1440.820" timestamp="1606268201736" />
+    <state x="385" y="167" width="670" height="676" key="search.everywhere.popup" timestamp="1606279645705">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="385" y="167" width="670" height="676" key="search.everywhere.popup/0.23.1440.820@0.23.1440.820" timestamp="1606279645705" />
+  </component>
+</project>

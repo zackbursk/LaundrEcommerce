@@ -54,7 +54,7 @@
       cursor: pointer;
 
       .bag__quantity {
-        color: #676767;
+        color: #FFFFFF;
         bottom: 5px;
         right: 1px;
       }
@@ -84,7 +84,7 @@
     box-sizing: border-box;
     margin-top: 10px;
     margin-left: 40px;
-    padding: 45px 0;
+    padding: 25px 0;
 
     .header-title {
       font-weight: bold;
@@ -92,17 +92,24 @@
       text-align: right;
       font-family: 'Calmer';
     }
+    .header-subtitle {
+      font-size: 1.0em;
+      text-align: center;
+      padding-left: 10px;
+      font-family: 'Calmer';
+    }
     .bag__quantity {
-      color: #676767;
-      top:58px;
+      color: #FFFFFf;
+      top:44px;
       left: 105px;
     }
   }
 
   &__shelf-container {
     position: relative;
-    min-height: 280px;
-    padding-bottom: 200px;
+    z-index: 100;
+    min-height: 100px;
+    padding-bottom: 100px;
 
     .shelf-empty {
       color: black;
@@ -206,10 +213,10 @@
     box-sizing: border-box;
     padding: 5%;
     position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 200px;
-    z-index: 2;
+    height: 100px;
+    z-index: 99;
+    border-bottom: 10px;
     background-color: #F9F9F9;
 
     &::before {
@@ -292,5 +299,5 @@
 
 @font-face {
   font-family: 'Calmer'; /*a name to be used later*/
-  src: url(../../images/images/Calmer.ttf); /*URL to font*/
+  src: url(../../../src/Calmer.ttf); /*URL to font*/
 }

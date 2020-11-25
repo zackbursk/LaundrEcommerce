@@ -1,7 +1,4 @@
 import React from 'react';
-import product from '../images/images/freshair_asset.png'
-import background from '../images/images/freshair_pattern.png'
-import data from "../data";
 
 const About = () => {
     return (

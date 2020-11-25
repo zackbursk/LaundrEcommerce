@@ -101,7 +101,132 @@ a:hover{
   padding: 5px 0;
   font-family: 'Roboto', sans-serif;
 }
+
+/*************TOP**************/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,
+input,
+select,
+button,
+textarea {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+/*.grid-container {*/
+/*  display: grid;*/
+/*  grid-template-areas:*/
+/*    "header"*/
+/*    "main"*/
+/*    "footer";*/
+/*  grid-template-rows: 5rem 1fr 5rem;*/
+/*  grid-template-columns: 1fr;*/
+/*  height: 100%;*/
+/*}*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff8000;
+}
+header {
+  grid-area: header;
+  background-color: #203040;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar {
+  flex: 1 20rem;
+}
+
+/* products */
+
+.button {
+  padding: .5rem;
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+.button:hover {
+  border: 0.1rem #808080 solid;
+}
+.button.primary {
+  background-color: #f0c040;
+}
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.filter div {
+  flex: 1;
+}
+/* Index.css */
+.cart {
+  padding: 0rem;
+  margin: .5rem;
+  display: flex;
+}
+.cart-header {
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.cart-items {
+  z-index: 50;
+  padding: 1px;
+  width: 100%;
+  list-style-type: none;
+  font-size:1em;
+  border-bottom: 1rem;
+}
+.cart-items img {
+  width: 7rem;
+}
+.cart-items li {
+  display: flex;
+  padding: 0rem;
+}
+.cart-items li div {
+  padding: 0.5rem;
+}
+.cart-items li div:last-child {
+  flex: 10;
+}
+.right {
+  text-align: center;
+  text-align: right;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.total > div {
+  font-size: 2rem;
+}
+.total > div,
+.total > button {
+  flex: 1;
+}
+
 @font-face {
   font-family: 'Calmer'; /*a name to be used later*/
-  src: url(./images/images/Calmer.ttf); /*URL to font*/
+  src: url(../src/Calmer.ttf); /*URL to font*/
 }

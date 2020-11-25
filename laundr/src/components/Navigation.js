@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import './navbar.scss';
-import Logo from '../images/images/laundr logo.png';
+import Logo from '../laundr logo.png';
 import FloatCart from "./Cart";
 import Product from "./About";
 import { Link } from 'react-router-dom';
@@ -36,7 +36,7 @@ const Navbar=() => {
 
             <nav className="navigation">
                 <ul>
-                    <FloatCart/>
+
                     <Router>
                         <Switch>
                             {/*<Route exact path="/" component={home} />*/}
