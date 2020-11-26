@@ -28,6 +28,7 @@ export default class home extends Component{
                                     >
                                         Add To Cart
                                     </button>
+                                    <img className="product-tessellation" src={product.tessellation} alt="productTessellation"/>
                                 </div>
                             </li>)
                     }

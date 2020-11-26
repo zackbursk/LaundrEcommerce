@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-snap-type: block mandatory;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 body {
   font: 1.6rem Helvetica;
@@ -11,7 +15,6 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-  "header"
   "main"
   "footer";
   grid-template-columns: 1fr;
@@ -43,6 +46,7 @@ body {
 }
 .main{
   grid-area: main;
+  height: 100vh;
 }
 .footer{
   grid-area: footer;
@@ -54,22 +58,26 @@ body {
 }
 a{
   text-decoration: none;
+  color: white;
 }
 a:hover{
-  color: #ff8000;
+  color: #ff9000;
 }
 
 /* Landing Page */
 .products {
-  display: grid;
+  display: block;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .products li{
   list-style-type: none;
+  margin: 0;
   padding: 0;
-  flex: 0 1 34rem;
-  height: 92vh;
+  height: 100vh;
+  width: 100vw;
 }
 .product{
   display: flex;
@@ -77,18 +85,41 @@ a:hover{
   justify-content: space-between;
   height: 100%;
   scroll-snap-align: end;
+  align-items: center;
+  margin: 0;
 }
 .product-name{
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
+  position: relative;
+  right: 30%;
+  bottom: 60%;
 }
 .product-price{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
+  position: relative;
+  right: 30%;
+  bottom: 58%;
 }
 .product-image{
   max-width: 100vh;
   max-height: 100vh;
+  z-index: 1;
+  position: relative;
+  top: 10%;
+}
+.product-tessellation{
+  width: 100vw;
+  height: 50vh;
+  z-index: 0;
+  position: relative;
+  bottom: 39vh;
+  background-color: white;
+  /*animation: tessellate 2s linear infinite;*/
+}
+@keyframes tessellate {
+  from { right: 0vw} to {right: 20vw};
 }
 .header-1{
   font-family: 'Calmer';
@@ -160,6 +191,10 @@ header a {
   border: 0.1rem #c0c0c0 solid;
   background-color: #f0f0f0;
   cursor: pointer;
+  position: relative;
+  right: 30%;
+  bottom: 58%;
+  font-size: 2.5rem;
 }
 .button:hover {
   border: 0.1rem #808080 solid;
