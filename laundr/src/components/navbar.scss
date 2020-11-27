@@ -8,12 +8,16 @@
     align-items: center;
     background-color: #8dcfdd;
     transition: all .2s ease;
+    /*Added by Alex*/
+    position: fixed;
+    z-index: 2;
 }
 
 .scrolled{
     position: fixed;
     top: 0;
     left: 0;
+    /*Added by Alex*/
     background-color: transparent;
 }
 .logo img{

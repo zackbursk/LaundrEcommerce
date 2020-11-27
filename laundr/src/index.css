@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   scroll-snap-type: block mandatory;
   height: 100%;
+  scrollbar-width: none;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -87,9 +88,10 @@ a:hover{
   scroll-snap-align: end;
   align-items: center;
   margin: 0;
+  position: relative;
 }
 .product-name{
-  font-size: 5rem;
+  font-size: 3vw;
   font-weight: bold;
   position: relative;
   right: 30%;
@@ -104,7 +106,7 @@ a:hover{
 }
 .product-image{
   max-width: 100vh;
-  max-height: 100vh;
+  max-height: 100vw;
   z-index: 1;
   position: relative;
   top: 10%;
@@ -113,8 +115,8 @@ a:hover{
   width: 100vw;
   min-height: 50%;
   z-index: 0;
-  position: relative;
-  bottom: 40%;
+  position: absolute;
+  bottom: 0px;
   background: white repeat 0 0;
   background-size: 900px 900px;
   animation: tessellate 8s linear infinite;
