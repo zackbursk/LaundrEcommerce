@@ -111,15 +111,17 @@ a:hover{
 }
 .product-tessellation{
   width: 100vw;
-  height: 50vh;
+  min-height: 50%;
   z-index: 0;
   position: relative;
-  bottom: 39vh;
-  background-color: white;
-  /*animation: tessellate 2s linear infinite;*/
+  bottom: 40%;
+  background: white repeat 0 0;
+  background-size: 900px 900px;
+  animation: tessellate 8s linear infinite;
 }
 @keyframes tessellate {
-  from { right: 0vw} to {right: 20vw};
+  from { background-position: 0 0; }
+    to { background-position: 0 -900px; }
 }
 .header-1{
   font-family: 'Calmer';
