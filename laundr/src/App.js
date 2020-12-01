@@ -22,18 +22,19 @@ class App extends React.Component{
     }
     removeFromCart = (product) => {
         const cartItems = this.state.cartItems.slice();
-        let alreadyInCart = true;
         cartItems.forEach((item) => {
             if (item.count > 1 && item._id === product._id) {
                 item.count--;
-                alreadyInCart = false;
             }
         });
-        if (alreadyInCart) {
-            cartItems.pop();
-        }
         this.setState({ cartItems });
+    };
 
+    removeAllFromCart = (product) => {
+        const cartItems = this.state.cartItems.slice();
+        this.setState({
+            cartItems: cartItems.filter((x) => x._id !== product._id),
+        });
     };
     addToCart = (product) => {
         const cartItems = this.state.cartItems.slice();
@@ -56,6 +57,7 @@ class App extends React.Component{
                 <FloatCart
                     cartItems={this.state.cartItems}
                     removeFromCart={this.removeFromCart}
+                    removeAllFromCart={this.removeAllFromCart}
                     addToCart={this.addToCart}
                 />
                 <Router>

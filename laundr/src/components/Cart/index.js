@@ -76,12 +76,21 @@ class FloatCart extends Component {
                                     <div>{item.name}</div>
                                     <div className="right">
                                         {formatCurrency(item.price)}x {item.count}{" "}
-                                        <button
-                                            className="button secondary"
-                                            onClick={() => this.props.removeFromCart(item)}
-                                        >
-                                            -
-                                        </button>
+                                        {item.count === 1 ? (
+                                            <button
+                                                className="button secondary"
+                                                onClick={() => this.props.removeAllFromCart(item)}
+                                            >
+                                                -
+                                            </button>
+                                        ) : (
+                                            <button
+                                                className="button secondary"
+                                                onClick={() => this.props.removeFromCart(item)}
+                                            >
+                                                -
+                                            </button>
+                                        )}
                                         <button
                                             className="button secondary"
                                             onClick={() => this.props.addToCart(item)}
