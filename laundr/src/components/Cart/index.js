@@ -75,7 +75,7 @@ class FloatCart extends Component {
                                 <div>
                                     <div>{item.name}</div>
                                     <div className="right">
-                                        {formatCurrency(item.price)} x {item.count}{" "}
+                                        {formatCurrency(item.price)}x {item.count}{" "}
                                         <button
                                             className="button secondary"
                                             onClick={() => this.props.removeFromCart(item)}
@@ -88,6 +88,7 @@ class FloatCart extends Component {
                                         >
                                             +
                                         </button>
+
 
                                     </div>
                                 </div>

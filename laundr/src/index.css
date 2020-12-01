@@ -206,6 +206,10 @@ header a {
 .button.primary {
   background-color: #f0c040;
 }
+.button.secondary {
+  /*background-color: #f0c040;*/
+  right:38%;
+}
 /* Filter */
 .filter {
   display: flex;
@@ -250,6 +254,8 @@ header a {
 .right {
   text-align: center;
   text-align: right;
+  justifyContent: 'space-between'
+
 }
 .total {
   display: flex;
