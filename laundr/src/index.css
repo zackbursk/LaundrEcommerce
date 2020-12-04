@@ -92,7 +92,6 @@ video{
 .footer-bottom-text{
   position: absolute;
   bottom: 5vh;
-
 }
 a{
   text-decoration: none;
@@ -128,6 +127,7 @@ a:hover{
   position: relative;
 }
 .product-name{
+  font-family: "Calmer";
   font-size: 3vw;
   font-weight: bold;
   position: relative;
@@ -142,14 +142,15 @@ a:hover{
   bottom: 58%;
 }
 .product-description{
-  font-size: 1.7vw;
+  font-size: 2.2vw;
   position: absolute;
   color: #ffffff;
   padding: 50px;
   width: 30vw;
   height: 15vh;
   left: 63vw;
-  top: 15vh;
+  top: 12vh;
+  font-family: "Roboto";
 }
 .product-image{
   max-width: 100vh;
