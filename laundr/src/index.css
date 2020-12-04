@@ -165,13 +165,13 @@ a:hover{
   z-index: 0;
   position: absolute;
   bottom: 0px;
-  background: white repeat 0 0;
-  background-size: 600px 600px;
-  animation: tessellate 11s linear infinite;
+  background: #F9F9F9 repeat 0 0;
+  background-size: 700px 700px;
+  animation: tessellate 12s linear infinite;
 }
 @keyframes tessellate {
   from { background-position: 0 0; }
-    to { background-position: 0 -600px; }
+    to { background-position: 0 -700px; }
 }
 .header-1{
   font-family: 'Calmer';
