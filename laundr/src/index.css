@@ -22,40 +22,77 @@ body {
   grid-template-rows: 10rem 1fr 5rem;
   height: 100%;
 }
-.header{
-  grid-area: header;
+.header-video{
   background-color: #203040;
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
-  padding: 0.5rem;
+  scroll-snap-align: end;
+  height: 70vh;
+  position: relative;
 }
-.brand a{
-  color: #ffffff;
-  font-size: 2.5rem;
+.header-video-text{
+  text-align: left;
+  font-size: 3vw;
   font-weight: bold;
-  text-decoration: none;
+  z-index: 1;
+  background: transparent;
+  margin: 3vw;
+  position: absolute;
+  top: 7vh;
 }
-.header-links a{
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.5rem;
+video{
+  position: relative;
+  width: 100%;
+  height: auto;
 }
-.header-links a:hover{
-  color: #ff8000;
+.header-video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .main{
   grid-area: main;
   height: 100vh;
 }
 .footer{
-  grid-area: footer;
   background-color: #203040;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: end;
+  height: 70vh;
+  position: relative;
+}
+.footer-contact{
+  position: absolute;
+  left: 8vw;
+  top: 10vh;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.footer-info{
+  position: relative;
+  left: 3vw;
+}
+.footer-news{
+  position: absolute;
+  padding: 50px;
+  width: 30vw;
+  right: 15vw;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.footer-news-info{
+  font-size: 1.2vw;
+}
+.footer-bottom-text{
+  position: absolute;
+  bottom: 5vh;
+
 }
 a{
   text-decoration: none;
@@ -65,7 +102,7 @@ a:hover{
   color: #ff9000;
 }
 
-/* Landing Page */
+/* Landing Page Products*/
 .products {
   display: block;
   justify-content: center;
@@ -103,6 +140,16 @@ a:hover{
   position: relative;
   right: 30%;
   bottom: 58%;
+}
+.product-description{
+  font-size: 1.7vw;
+  position: absolute;
+  color: #ffffff;
+  padding: 50px;
+  width: 30vw;
+  height: 15vh;
+  left: 63vw;
+  top: 15vh;
 }
 .product-image{
   max-width: 100vh;
@@ -254,7 +301,7 @@ header a {
 .right {
   text-align: center;
   text-align: right;
-  justifyContent: 'space-between'
+  justify-content: 'space-between'
 
 }
 .total {
