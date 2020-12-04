@@ -166,12 +166,12 @@ a:hover{
   position: absolute;
   bottom: 0px;
   background: white repeat 0 0;
-  background-size: 900px 900px;
-  animation: tessellate 8s linear infinite;
+  background-size: 600px 600px;
+  animation: tessellate 11s linear infinite;
 }
 @keyframes tessellate {
   from { background-position: 0 0; }
-    to { background-position: 0 -900px; }
+    to { background-position: 0 -600px; }
 }
 .header-1{
   font-family: 'Calmer';
