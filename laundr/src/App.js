@@ -4,11 +4,9 @@ import './App.css';
 import FloatCart from "./components/Cart";
 import Navigation from "./components/Navigation";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import home from "./components/Home";
 import About from "./components/About";
-import NoMatch from "./components/NoMatch";
+import Story from "./components/Story";
 import Home from "./components/Home";
-import Products from "./components/products";
 
 class App extends React.Component{
     constructor() {
@@ -67,6 +65,8 @@ class App extends React.Component{
                     addToCart={this.addToCart}
                 />
                 </Route><Route exact path="/about"><About
+                />
+                    </Route><Route exact path="/story"><Story
                 />
                 </Route>
                     </Switch>

@@ -4,17 +4,18 @@ const About = () => {
     return (
     <div>
         <main className="main">
+            <div>""</div><div>""</div><div>""</div><div>""</div><div>""</div>
             <div className = "header-1">
                 Social Media Accounts
             </div>
             <div className = "header-2">
-                <a href="http://facebook.com/laundrofficial">Facebook</a>
+                <a2 href="http://facebook.com/laundrofficial">Facebook</a2>
             </div>
             <div className = "header-2">
-                <a href="http://instagram.com/laundrofficial">Instagram</a>
+                <a2 href="http://instagram.com/laundrofficial">Instagram</a2>
             </div>
             <div className = "header-2">
-                <a href="https://twitter.com/laundrofficial">Twitter</a>
+                <a2 href="https://twitter.com/laundrofficial">Twitter</a2>
             </div>
             <div className = "header-1">
                 Contact Info

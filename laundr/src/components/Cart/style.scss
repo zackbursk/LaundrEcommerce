@@ -46,8 +46,6 @@
 
     &--float-cart-closed {
       position: absolute;
-      //background-color: #676767;
-      //background-size: 60%;
       left: -230px;
       top: 25px;
       width: 40px;
@@ -59,7 +57,6 @@
         bottom: 5px;
         right: 1px;
       }
-
     }
 
     &__quantity {
@@ -118,96 +115,6 @@
       line-height: 40px;
       padding: 5%;
     }
-
-    .shelf-item {
-      position: relative;
-      box-sizing: border-box;
-      padding: 5%;
-
-      transition: background-color 0.4s, opacity 0.4s;
-
-      &::before {
-        content: '';
-        width: 90%;
-        height: 2px;
-        background-color: rgba(0, 0, 0, 0.2);
-        position: absolute;
-        top: 0;
-        left: 5%;
-      }
-
-      &--mouseover {
-        background: #0c0b10;
-
-        .shelf-item__details {
-          .title,
-          .desc {
-            text-decoration: line-through;
-            opacity: 0.6;
-          }
-        }
-
-        .shelf-item__price {
-          text-decoration: line-through;
-          opacity: 0.6;
-        }
-      }
-
-      &__del {
-        width: 16px;
-        height: 16px;
-        top: 15px;
-        right: 5%;
-        border-radius: 50%;
-        position: absolute;
-        background-size: auto 100%;
-        background-image: url('https://rawcdn.githack.com/jeffersonRibeiro/react-shopping-cart/ccf64841ddfdfedfce9821b2b7ff2c8075afb17c/src/static/sprite_delete-icon.png');
-        background-repeat: no-repeat;
-        z-index: 2;
-        cursor: pointer;
-
-        &:hover {
-          background-position-x: -17px;
-        }
-      }
-
-      &__thumb,
-      &__details,
-      &__price {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      &__thumb {
-        vertical-align: middle;
-        width: 15%;
-        margin-right: 3%;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      &__details {
-        width: 57%;
-
-        .title {
-          color: #ececec;
-          margin: 0;
-        }
-
-        .desc {
-          color: #5b5a5e;
-          margin: 0;
-        }
-      }
-      &__price {
-        font-family: 'Roboto', sans-serif;
-        color: #676767;
-        text-align: right;
-        width: 25%;
-      }
-    }
   }
 
   &__footer {
@@ -250,14 +157,10 @@
       width: 80%;
       text-align: right;
 
-      &__val,
-      &__installment {
-        margin: 0;
-      }
-
       &__val {
         color: #676767;
         font-size: 22px;
+        margin: 0;
       }
     }
 

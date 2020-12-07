@@ -1,9 +1,4 @@
 import React, {Component} from 'react';
-import FloatCart from './Cart';
-import Navigation from './Navigation';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import data from "../data";
-import Products from "./products";
 
 export default class home extends Component{
 

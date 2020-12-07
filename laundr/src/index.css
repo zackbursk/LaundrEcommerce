@@ -178,10 +178,14 @@ a:hover{
   font-size: 2.6rem;
   font-weight: bold;
   padding: 10px 0;
+  display: flex;
+  /*justify-content: flex-end;*/
 }
 .header-2{
+  /*position: center;*/
   font-size: 2rem;
   padding: 5px 0;
+  font-color:black;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -202,22 +206,15 @@ textarea {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
 }
-
-/*.grid-container {*/
-/*  display: grid;*/
-/*  grid-template-areas:*/
-/*    "header"*/
-/*    "main"*/
-/*    "footer";*/
-/*  grid-template-rows: 5rem 1fr 5rem;*/
-/*  grid-template-columns: 1fr;*/
-/*  height: 100%;*/
-/*}*/
 a {
   text-decoration: none;
 }
+a2 {
+  text-decoration: none;
+  color:#000000;
+}
 a:hover {
-  color: #ff8000;
+  color: #8dcfdd;
 }
 header {
   grid-area: header;
@@ -231,7 +228,6 @@ header a {
   color: #ffffff;
   text-decoration: none;
 }
-
 .sidebar {
   flex: 1 20rem;
 }
@@ -302,7 +298,6 @@ header a {
 .right {
   text-align: center;
   text-align: right;
-  justify-content: 'space-between'
 
 }
 .total {

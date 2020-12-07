@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
- import { connect } from 'react-redux';
-// import { loadCart, removeProduct, changeProductQuantity } from '../services/cart/actions';
-// import { updateCart } from '../../services/total/actions';
 import formatCurrency from '../util';
-
 import './style.scss';
 import '../../index.css'
 
@@ -25,7 +19,6 @@ class FloatCart extends Component {
 
     render() {
         const { cartItems } = this.props;
-
         let classes = ['float-cart'];
 
         if (!!this.state.isOpen) {
@@ -34,7 +27,6 @@ class FloatCart extends Component {
 
         return (
             <div className={classes.join(' ')}>
-                {/* If cart open, show close (x) button */}
                 {this.state.isOpen && (
                     <div
                         onClick={() => this.closeFloatCart()}
@@ -43,8 +35,6 @@ class FloatCart extends Component {
                         X
                     </div>
                 )}
-
-                {/* If cart is closed, show bag with quantity of product and open cart action */}
                 {!this.state.isOpen && (
                     <span
                         onClick={() => this.openFloatCart()}
@@ -55,7 +45,6 @@ class FloatCart extends Component {
                 )}
                 <div className="float-cart__content">
                     <div className="float-cart__header">
-
                         <span className="header-title">Cart</span>
                     </div>
 
@@ -77,34 +66,22 @@ class FloatCart extends Component {
                                     <div className="right">
                                         {formatCurrency(item.price)}x {item.count}{" "}
                                         {item.count === 1 ? (
-                                            <button
-                                                className="button secondary"
-                                                onClick={() => this.props.removeAllFromCart(item)}
-                                            >
+                                            <button className="button secondary" onClick={() => this.props.removeAllFromCart(item)}>
                                                 -
                                             </button>
                                         ) : (
-                                            <button
-                                                className="button secondary"
-                                                onClick={() => this.props.removeFromCart(item)}
-                                            >
+                                            <button className="button secondary" onClick={() => this.props.removeFromCart(item)}>
                                                 -
                                             </button>
                                         )}
-                                        <button
-                                            className="button secondary"
-                                            onClick={() => this.props.addToCart(item)}
-                                        >
+                                        <button className="button secondary" onClick={() => this.props.addToCart(item)}>
                                             +
                                         </button>
-
-
                                     </div>
                                 </div>
                             </li>
                         ))}
                             </ul>
-
                     </div>
                     <div className="float-cart__footer">
                         <div className="sub">Total</div>
