@@ -10,21 +10,19 @@ export default class Fresh_Air extends Component{
                     <div className="navbar-background-rect" style={{backgroundColor: "#8dcfdd"}}></div>
                     <div className="page-title" style={{color: "#8dcfdd"}}>
                         Fresh <br/> Air
-
                     </div>
-
+                    <div className="button-container">
+                        <button
+                            onClick={() => this.props.addToCart(products[0])}
+                            className="button primary"
+                            >
+                            Add To Cart
+                        </button>
+                    </div>
 
                     <img className="page-image" src="/img/products/fresh.png" alt="productImage"></img>
                     <div className="page-ingredients">
-                        <div className="page-header">Ingredients
-                            <button
-
-                                onClick={() => this.props.addToCart(products[0])}
-                                className="button primary"
-                            >
-                                Add To Cart
-                            </button>
-                        </div>
+                        <div className="page-header">Ingredients</div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in

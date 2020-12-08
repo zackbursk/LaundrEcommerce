@@ -9,19 +9,18 @@ export default class Coffee_Vanilla extends Component{
                 <div className="navbar-background-rect" style={{backgroundColor: "#e2cea3"}}></div>
                 <div className="page-title" style={{color: "#e2cea3"}}>
                     Coffee <br/> Vanilla
-
                 </div>
-                <img className="page-image" src="/img/products/coffee.png" alt="productImage"></img>
-                <div className="page-ingredients">
-                    <div className="page-header">Ingredients
+                <div className="button-container">
                         <button
-
                             onClick={() => this.props.addToCart(products[1])}
                             className="button primary"
-                        >
+                            >
                             Add To Cart
                         </button>
                     </div>
+                <img className="page-image" src="/img/products/coffee.png" alt="productImage"></img>
+                <div className="page-ingredients">
+                    <div className="page-header">Ingredients</div>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

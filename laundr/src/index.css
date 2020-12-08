@@ -247,12 +247,15 @@ header a {
   right: 30%;
   bottom: 58%;
   font-size: 2.5rem;
+  z-index: 1;
 }
 .button:hover {
   border: 0.1rem #808080 solid;
+  z-index: 1;
 }
 .button.primary {
   background-color: #f0c040;
+  z-index: 1;
 }
 .button.secondary {
   /*background-color: #f0c040;*/
@@ -407,4 +410,10 @@ header a {
   position: fixed;
   z-index: 1;
   opacity: 90%;
+}
+.button-container{
+  position: fixed;
+  bottom: 10%;
+  left: 30%;
+  z-index: 2;
 }

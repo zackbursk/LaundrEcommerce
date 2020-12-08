@@ -10,17 +10,17 @@ export default class Eucalyptus_Tea_Tree extends Component{
                 <div className="page-title" style={{color: "#48c47e"}}>
                     Eucalyptus <br/> Tea Tree
                 </div>
-                <img className="page-image" src="/img/products/eucalyptus.png" alt="productImage"></img>
-                <div className="page-ingredients">
-                    <div className="page-header">Ingredients
+                <div className="button-container">
                         <button
-
                             onClick={() => this.props.addToCart(products[2])}
                             className="button primary"
-                        >
+                            >
                             Add To Cart
                         </button>
                     </div>
+                <img className="page-image" src="/img/products/eucalyptus.png" alt="productImage"></img>
+                <div className="page-ingredients">
+                    <div className="page-header">Ingredients</div>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
