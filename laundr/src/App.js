@@ -19,7 +19,9 @@ class App extends React.Component{
         super();
         this.state = {
             products: data.products,
-            cartItems: [],
+            cartItems: localStorage.getItem("cartItems")
+                ? JSON.parse(localStorage.getItem("cartItems"))
+                : [],
             size: "",
             sort: "",
         };
@@ -32,6 +34,7 @@ class App extends React.Component{
             }
         });
         this.setState({ cartItems });
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
     };
 
     removeAllFromCart = (product) => {
@@ -39,6 +42,10 @@ class App extends React.Component{
         this.setState({
             cartItems: cartItems.filter((x) => x._id !== product._id),
         });
+        localStorage.setItem(
+            "cartItems",
+            JSON.stringify(cartItems.filter((x) => x._id !== product._id))
+        );
     };
     addToCart = (product) => {
         const cartItems = this.state.cartItems.slice();
@@ -53,6 +60,7 @@ class App extends React.Component{
             cartItems.push({ ...product, count: 1 });
         }
         this.setState({ cartItems });
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
     };
     render() {
         return (
@@ -70,17 +78,32 @@ class App extends React.Component{
                     products={this.state.products}
                     addToCart={this.addToCart}
                 />
-                </Route><Route exact path="/about"><About
-                />
-                    </Route><Route exact path="/story"><Story
-                />
-                </Route>
-                <Route exact path="/fresh_air"><Fresh_Air/></Route>
-                <Route exact path="/coffee_vanilla"><Coffee_Vanilla/></Route>
-                <Route exact path="/eucalyptus_tea_tree"><Eucalyptus_Tea_Tree/></Route>
-                <Route exact path="/white_gardenia"><White_Gardenia/></Route>
-                <Route exact path="/mahogany_teakwood"><Mahogany_Teakwood/></Route>
-                <Route exact path="/watermelon_cucumber"><Watermelon_Cucumber/></Route>
+                </Route><Route exact path="/about"><About/></Route>
+                        <Route exact path="/story"><Story/></Route>
+                <Route exact path="/fresh_air"><Fresh_Air
+                    products={this.state.products}
+                    addToCart={this.addToCart}
+                /></Route>
+                <Route exact path="/coffee_vanilla"><Coffee_Vanilla
+                    products={this.state.products}
+                    addToCart={this.addToCart}
+                /></Route>
+                <Route exact path="/eucalyptus_tea_tree"><Eucalyptus_Tea_Tree
+                    products={this.state.products}
+                    addToCart={this.addToCart}
+                /></Route>
+                <Route exact path="/white_gardenia"><White_Gardenia
+                    products={this.state.products}
+                    addToCart={this.addToCart}
+                /></Route>
+                <Route exact path="/mahogany_teakwood"><Mahogany_Teakwood
+                    products={this.state.products}
+                    addToCart={this.addToCart}
+                /></Route>
+                <Route exact path="/watermelon_cucumber"><Watermelon_Cucumber
+                    products={this.state.products}
+                    addToCart={this.addToCart}
+                /></Route>
                     </Switch>
                 </Router>
             </div>
