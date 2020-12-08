@@ -4,6 +4,7 @@ const About = () => {
     return (
     <div>
         <main className="main">
+        <div className="navbar-background-rect" style={{backgroundColor: "#8dcfdd"}}></div>
             <div>""</div><div>""</div><div>""</div><div>""</div><div>""</div>
             <div className = "header-1">
                 Social Media Accounts

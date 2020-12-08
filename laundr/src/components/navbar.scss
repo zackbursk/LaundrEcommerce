@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8dcfdd;
+    background-color: transparent;
     transition: all .2s ease;
     /*Added by Alex*/
     position: fixed;
@@ -18,7 +18,7 @@
     top: 0;
     left: 0;
     /*Added by Alex*/
-    background-color: transparent;
+    background-color:  transparent;
 }
 .logo img{
     width: 225px;
@@ -37,6 +37,7 @@
             font-family: 'Roboto', sans-serif;
             text-align: center;
             padding: .5em;
+            font-weight: bold;
             cursor: pointer;
             &:hover{
                 background-color: #676767;

@@ -18,9 +18,11 @@ export default class home extends Component{
                         this.props.products.map(product =>
                             <li>
                                 <div className="product" style={{backgroundColor: product.color}}>
-                                    <img className="product-image" src={product.image} alt="productImage"/>
+                                    <a href={product.link}>
+                                        <img className="product-image" src={product.image} alt="productImage"/>
+                                    </a>
                                     <div className="product-name">
-                                        <a href="product.html">{product.name}</a>
+                                        <a href={product.link}>{product.name}</a>
                                     </div>
                                     <div className="product-price">${product.price}</div>
                                     <div className="product-description">{product.description}</div>

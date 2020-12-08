@@ -153,11 +153,15 @@ a:hover{
   font-family: "Roboto";
 }
 .product-image{
-  max-width: 100vh;
-  max-height: 100vw;
+  max-width: 50vh;
+  max-height: 50vw;
   z-index: 1;
   position: relative;
   top: 10%;
+  transition: transform .2s;
+}
+.product-image:hover{
+  transform: scale(1.1);
 }
 .product-tessellation{
   width: 100vw;
@@ -213,7 +217,7 @@ a2 {
   text-decoration: none;
   color:#000000;
 }
-a:hover {
+a2:hover {
   color: #8dcfdd;
 }
 header {
@@ -317,4 +321,90 @@ header a {
 @font-face {
   font-family: 'Calmer'; /*a name to be used later*/
   src: url(../src/Calmer.ttf); /*URL to font*/
+}
+
+/* Product Page */
+.page-main {
+  display: flex;
+  justify-content: center;
+}
+.page-title {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 30vh;
+}
+.page-image {
+  position: fixed;
+  width: 55vw;
+  z-index: 1;
+  top: 10%;
+}
+.page-header {
+  font-size: 1.7vw;
+  font-weight: bold;
+  color: black;
+}
+.page-ingredients {
+  font-size: 1.2vw;
+  position: absolute;
+  color: black;
+  width: 20vw;
+  height: 15vh;
+  top: 90vh;
+  right: 25vh;
+  font-family: "Roboto";
+  line-height: 140%;
+}
+.page-nutrition {
+  font-size: 1.2vw;
+  position: absolute;
+  color: black;
+  width: 20vw;
+  height: 15vh;
+  top: 140vh;
+  right: 25vh;
+  font-family: "Roboto";
+  line-height: 140%;
+}
+.page-fragrance {
+  font-size: 1.2vw;
+  position: absolute;
+  color: black;
+  width: 25vw;
+  height: 15vh;
+  top: 90vh;
+  left: 25vh;
+  font-family: "Roboto";
+  line-height: 140%;
+}
+.page-fragrant {
+  font-size: 2.3vw;
+  font-weight: bold;
+  font-family: "Calmer";
+  line-height: 3;
+}
+.page-description {
+  font-size: 1.2vw;
+  position: absolute;
+  color: black;
+  width: 25vw;
+  height: 15vh;
+  top: 150vh;
+  left: 25vh;
+  font-family: "Roboto";
+  line-height: 140%;
+}
+.navbar-background-rect {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .2s ease;
+  position: fixed;
+  z-index: 1;
+  opacity: 90%;
 }

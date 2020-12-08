@@ -7,6 +7,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./components/About";
 import Story from "./components/Story";
 import Home from "./components/Home";
+import Fresh_Air from "./components/product-fresh_air";
+import Coffee_Vanilla from "./components/product-coffee_vanilla"
+import Eucalyptus_Tea_Tree from "./components/product-eucalyptus_tea_tree"
+import White_Gardenia from "./components/product-white_gardenia"
+import Mahogany_Teakwood from "./components/product-mahogany_teakwood"
+import Watermelon_Cucumber from "./components/product-watermelon_cucumber"
 
 class App extends React.Component{
     constructor() {
@@ -69,6 +75,12 @@ class App extends React.Component{
                     </Route><Route exact path="/story"><Story
                 />
                 </Route>
+                <Route exact path="/fresh_air"><Fresh_Air/></Route>
+                <Route exact path="/coffee_vanilla"><Coffee_Vanilla/></Route>
+                <Route exact path="/eucalyptus_tea_tree"><Eucalyptus_Tea_Tree/></Route>
+                <Route exact path="/white_gardenia"><White_Gardenia/></Route>
+                <Route exact path="/mahogany_teakwood"><Mahogany_Teakwood/></Route>
+                <Route exact path="/watermelon_cucumber"><Watermelon_Cucumber/></Route>
                     </Switch>
                 </Router>
             </div>
