@@ -7,3 +7,13 @@ Open FireFox browser for optimal performance (correct scroll wheel snapping), or
 Navigate to the following link
 https://laundr-ecommerce.herokuapp.com/
 
+# For Developers
+
+1. Clone the repo
+
+2. Run npm install
+
+3. Run npm start
+
+4. Site will deploy on localhost:3000
+
